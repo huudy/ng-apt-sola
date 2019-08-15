@@ -1,0 +1,8 @@
+<ngb-alert *ngIf="message" [type]="message.type" [dismissible]="true" (close)="close()" class="message.cssClass">
+  <ng-container *ngIf="message.icon">
+    <div class="alert-inner--icon">
+      <i class="{{message.icon}}"></i>
+    </div>
+  </ng-container>
+  <span class="alert-inner--text"> <strong>{{message.strong}} </strong>{{ message.text }}</span>
+</ngb-alert>
