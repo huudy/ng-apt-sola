@@ -14,7 +14,7 @@
       <div class="row justify-content-center">
         <div class="col-lg-5">
           <div class="card bg-secondary shadow border-0">
-            <div class="card-header bg-white pb-5">
+            <!-- <div class="card-header bg-white pb-5">
               <div class="text-muted text-center mb-3">
                 <small>Sign up with</small>
               </div>
@@ -32,10 +32,10 @@
                   <span class="btn-inner--text">Google</span>
                 </a>
               </div>
-            </div>
+            </div> -->
             <div class="card-body px-lg-5 py-lg-5">
               <div class="text-center text-muted mb-4">
-                <small>Or sign up with credentials</small>
+                <small>Sign up with credentials</small>
               </div>
               <form role="form" [formGroup]="signupForm" (ngSubmit)="onSubmit()">
                 <div class="form-group" [ngClass]="{'focused':focus===true}">
@@ -65,11 +65,11 @@
                       (blur)="focus2=false" formControlName="password">
                   </div>
                 </div>
-                <div class="text-muted font-italic">
+                <!-- <div class="text-muted font-italic">
                   <small>password strength:
                     <span class="text-success font-weight-700">strong</span>
                   </small>
-                </div>
+                </div> -->
                 <div class="row my-4">
                   <div class="col-12">
                     <div class="custom-control custom-control-alternative custom-checkbox">
